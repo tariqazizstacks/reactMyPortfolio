@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*==================================
+        SKILLS SECTION
+===================================*/
+
+#skills{
+    min-height:100vh;
+    padding:80px 8% 40px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:
+    radial-gradient(circle at top left,#1d4ed8 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#06b6d4 0%,transparent 35%),
+    #050816;
+}
+
+/*==================================
+            HEADING
+===================================*/
+
+#skills h1{
+    text-align:center;
+    color:#fff;
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#00E5FF;
+    font-size:18px;
+    margin-bottom:50px;
+}
+
+/*==================================
+        SKILLS GRID
+===================================*/
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+/*==================================
+        SKILL CARD
+===================================*/
+
+.skill-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:20px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00E5FF;
+
+    box-shadow:
+    0 0 30px rgba(0,229,255,.25);
+}
+
+.skill-card h3{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.skill-card:hover h3{
+
+    color:#00E5FF;
+}
+
+/*==================================
+        RESPONSIVE
+===================================*/
+
+@media(max-width:768px){
+
+#skills{
+    padding:80px 6%;
+}
+
+#skills h1{
+    font-size:40px;
+}
+
+.subtitle{
+    font-size:16px;
+    margin-bottom:35px;
+}
+
+.skill-card{
+    padding:25px 15px;
+}
+
+.skill-card h3{
+    font-size:20px;
+}
+
+}

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    margin:0;
+    background:#050816;
+}
+   
+
+/*==========================
+        NAVBAR
+==========================*/
+
+#navbar{
+
+    position:fixed;
+    top:11px;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:92%;
+    max-width:1400px;
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 45px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+    0 8px 40px rgba(0,0,0,.35),
+    inset 0 1px 1px rgba(255,255,255,.12);
+
+    z-index:9999;
+
+    transition:.45s;
+}
+
+#navbar:hover{
+
+    transform:translateX(-50%) translateY(-3px);
+
+    box-shadow:
+    0 18px 60px rgba(0,0,0,.45),
+    0 0 30px rgba(0,255,255,.15);
+
+}
+
+/*==========================
+        LOGO
+==========================*/
+
+.logo h2{
+
+    color:#fff;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    background:linear-gradient(90deg,#00E5FF,#00FFA3,#FFFFFF);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    transition:.5s;
+
+}
+
+.logo h2:hover{
+
+    transform:scale(1.08);
+
+    filter:drop-shadow(0 0 18px cyan);
+
+}
+
+/*==========================
+        MENU
+==========================*/
+
+#navbar ul{
+
+    display:flex;
+
+    gap:15px;
+
+    list-style:none;
+
+}
+
+#navbar ul li{
+
+    position:relative;
+
+}
+
+#navbar ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Animated underline */
+
+#navbar ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:6px;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:linear-gradient(90deg,#00E5FF,#00FFA3);
+
+    transition:.45s;
+
+}
+
+#navbar ul li a:hover::after{
+
+    width:70%;
+
+}
+
+/* Hover */
+
+#navbar ul li a:hover{
+
+    color:#00FFD5;
+
+    background:rgba(255,255,255,.08);
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.18);
+
+}
+
+/* Click */
+
+#navbar ul li a:active{
+
+    transform:scale(.95);
+
+}
+
+/*==========================
+     Animated Border Glow
+==========================*/
+
+#navbar::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:24px;
+
+    background:
+    linear-gradient(90deg,
+    #00E5FF,
+    #7B61FF,
+    #00FFA3,
+    #00E5FF);
+
+    background-size:300%;
+
+    z-index:-2;
+
+    animation:borderMove 8s linear infinite;
+
+    filter:blur(12px);
+
+    opacity:.55;
+
+}
+
+#navbar::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:1px;
+
+    border-radius:22px;
+
+    background:rgba(5,8,22,.88);
+
+    z-index:-1;
+
+}
+
+/*==========================
+        Animation
+==========================*/
+
+@keyframes borderMove{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:300%;
+
+}
+
+}
+
+/*==========================
+      Responsive
+==========================*/
+
+@media(max-width:900px){
+
+#navbar{
+
+padding:0 20px;
+
+}
+
+#navbar ul{
+
+gap:4px;
+
+}
+
+#navbar ul li a{
+
+font-size:14px;
+
+padding:10px;
+
+}
+
+.logo h2{
+
+font-size:22px;
+
+}
+
+}
+
+@media(max-width:700px){
+
+#navbar{
+
+flex-direction:column;
+
+height:auto;
+
+padding:18px;
+
+gap:18px;
+
+}
+
+body{
+
+padding-top:150px;
+
+}
+
+#navbar ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}

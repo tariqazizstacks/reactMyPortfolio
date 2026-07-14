@@ -1,0 +1,232 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*==================================
+        CONTACT SECTION
+===================================*/
+
+#contact{
+    min-height:100vh;
+    padding:80px 8% 40px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:
+    radial-gradient(circle at top right,#1d4ed8 0%,transparent 35%),
+    radial-gradient(circle at bottom left,#06b6d4 0%,transparent 35%),
+    #050816;
+}
+
+/*==================================
+            HEADING
+===================================*/
+
+#contact h1{
+    text-align:center;
+    color:white;
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#00E5FF;
+    font-size:18px;
+    margin-bottom:40px;
+    letter-spacing:1px;
+}
+
+/*==================================
+        MAIN CONTAINER
+===================================*/
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+/*==================================
+        LEFT SIDE
+===================================*/
+
+.contact-info h2{
+    color:white;
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+.contact-info > p:first-of-type{
+    color:#b7c2cf;
+    font-size:16px;
+    line-height:1.7;
+    margin-bottom:22px;
+}
+
+.contact-info p{
+    color:#d5dce5;
+    font-size:16px;
+    margin-bottom:12px;
+}
+
+.contact-info strong{
+    color:#00E5FF;
+}
+
+/*==================================
+        CONTACT FORM
+===================================*/
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+
+    padding:px 25px;
+    border-radius:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    outline:none;
+
+    padding:14px 16px;
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.35s;
+}
+
+.contact-form textarea{
+    height:120px;
+    resize:none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color:#9ba9ba;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#00E5FF;
+
+    box-shadow:0 0 15px rgba(0,229,255,.25);
+}
+
+/*==================================
+            BUTTON
+===================================*/
+
+.contact-form button{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#04111d;
+
+    background:linear-gradient(135deg,#00E5FF,#00FFA3);
+
+    transition:.4s;
+}
+
+.contact-form button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(0,255,200,.35);
+}
+
+/*==================================
+        RESPONSIVE
+===================================*/
+
+@media(max-width:1000px){
+
+#contact{
+    padding:90px 7%;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.contact-info{
+    text-align:center;
+}
+
+}
+
+@media(max-width:600px){
+
+#contact{
+    padding:80px 6%;
+}
+
+#contact h1{
+    font-size:40px;
+}
+
+.subtitle{
+    font-size:16px;
+    margin-bottom:35px;
+}
+
+.contact-info h2{
+    font-size:28px;
+}
+
+.contact-info p{
+    font-size:15px;
+}
+
+.contact-form{
+    padding:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:12px 14px;
+}
+
+.contact-form button{
+    padding:13px;
+}
+
+}

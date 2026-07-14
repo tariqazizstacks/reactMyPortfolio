@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/*==================================
+        EDUCATION SECTION
+===================================*/
+
+#education{
+    min-height:100vh;
+    padding:80px 8% 40px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:
+    radial-gradient(circle at top left,#1d4ed8 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#06b6d4 0%,transparent 35%),
+    #07111f;
+}
+
+/*==================================
+            HEADING
+===================================*/
+
+#education h1{
+    text-align:center;
+    color:white;
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#00E5FF;
+    font-size:18px;
+    margin-bottom:45px;
+    letter-spacing:1px;
+}
+
+/*==================================
+        EDUCATION CARD
+===================================*/
+
+.education-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.education-card{
+
+    width:100%;
+    max-width:850px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.4s;
+}
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00E5FF;
+
+    box-shadow:
+    0 0 30px rgba(0,229,255,.25);
+}
+
+/*==================================
+            YEAR
+===================================*/
+
+.year{
+
+    display:inline-block;
+
+    background:linear-gradient(135deg,#00E5FF,#00FFA3);
+
+    color:#04111d;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+/*==================================
+        TEXT
+===================================*/
+
+.education-card h2{
+
+    color:white;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.education-card h3{
+
+    color:#00E5FF;
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+}
+
+.education-card p{
+
+    color:#b8c3d1;
+
+    font-size:17px;
+
+    line-height:1.8;
+}
+
+/*==================================
+        RESPONSIVE
+===================================*/
+
+@media(max-width:768px){
+
+#education{
+
+padding:80px 6%;
+}
+
+#education h1{
+
+font-size:40px;
+}
+
+.subtitle{
+
+font-size:16px;
+
+margin-bottom:35px;
+}
+
+.education-card{
+
+padding:25px;
+}
+
+.education-card h2{
+
+font-size:26px;
+}
+
+.education-card h3{
+
+font-size:18px;
+}
+
+.education-card p{
+
+font-size:15px;
+}
+
+}
