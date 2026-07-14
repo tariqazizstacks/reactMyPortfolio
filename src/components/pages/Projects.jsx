@@ -9,7 +9,6 @@ import colorchangerImg from "../../assets/images/colorchanger.png";
 export default function Projects() {
   return (
     <section id="projects">
-
       <h1>Projects</h1>
 
       <p className="subtitle">
@@ -17,7 +16,6 @@ export default function Projects() {
       </p>
 
       <div className="projects-container">
-
         {/* Project 1 */}
 
         <div className="project-card">
@@ -30,7 +28,14 @@ export default function Projects() {
             </p>
             <span>React • CSS • JavaScript</span>
             <div className="project-buttons">
-              <a href="#" target="_blank" rel="noreferrer">
+              {/* <a href="#" target="_blank" rel="noreferrer"> Live Demo </a> */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert("Live Demo Coming Soon 🚀");
+                }}
+              >
                 Live Demo
               </a>
               <a href="#" target="_blank" rel="noreferrer">
@@ -43,7 +48,7 @@ export default function Projects() {
         {/* Project 2 */}
 
         <div className="project-card">
-        <img src={weatherImg} alt="Weather App" />
+          <img src={weatherImg} alt="Weather App" />
           {/* <img src="" alt="Weather App" /> */}
           <div className="project-content">
             <h2>Weather App</h2>
@@ -53,12 +58,21 @@ export default function Projects() {
             </p>
             <span>React • API • CSS</span>
             <div className="project-buttons">
-              <a href="#">Live Demo</a>
-              <a href="https://tariqazizstacks.github.io/Weather-App/">GitHub</a>
+              {/* <a href="#">Live Demo</a> */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert("Live Demo Coming Soon 🚀");
+                }}
+              >
+                Live Demo
+              </a>
+              <a href="https://tariqazizstacks.github.io/Weather-App/">
+                GitHub
+              </a>
             </div>
-
           </div>
-
         </div>
 
         {/* Project 3 */}
@@ -67,7 +81,6 @@ export default function Projects() {
           <img src={calculatorImg} alt="Calculator" />
 
           <div className="project-content">
-
             <h2>Calculator</h2>
 
             <p>
@@ -78,22 +91,29 @@ export default function Projects() {
             <span>HTML • CSS • JavaScript</span>
 
             <div className="project-buttons">
-              <a href="#">Live Demo</a>
-              <a href="https://tariqazizstacks.github.io/calculator-app/">GitHub</a>
+              {/* <a href="#">Live Demo</a> */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert("Live Demo Coming Soon 🚀");
+                }}
+              >
+                Live Demo
+              </a>
+              <a href="https://tariqazizstacks.github.io/calculator-app/">
+                GitHub
+              </a>
             </div>
-
           </div>
-
         </div>
 
         {/* Project 4 */}
 
         <div className="project-card">
-
           <img src={colorchangerImg} alt="Random Color Generator" />
 
           <div className="project-content">
-
             <h2>Random Color Generator</h2>
 
             <p>
@@ -104,22 +124,29 @@ export default function Projects() {
             <span>JavaScript • CSS</span>
 
             <div className="project-buttons">
-              <a href="#">Live Demo</a>
-              <a href="https://tariqazizstacks.github.io/RandomColorChanger/">GitHub</a>
+              {/* <a href="#">Live Demo</a> */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert("Live Demo Coming Soon 🚀");
+                }}
+              >
+                Live Demo
+              </a>
+              <a href="https://tariqazizstacks.github.io/RandomColorChanger/">
+                GitHub
+              </a>
             </div>
-
           </div>
-
         </div>
 
         {/* Project 5 */}
 
         <div className="project-card">
-
           <img src={dicegameImg} alt="Dice Game" />
 
           <div className="project-content">
-
             <h2>Dice Game</h2>
 
             <p>
@@ -130,22 +157,29 @@ export default function Projects() {
             <span>HTML • CSS • JavaScript</span>
 
             <div className="project-buttons">
-              <a href="#">Live Demo</a>
-              <a href="https://tariqazizstacks.github.io/Dice-Game-App/">GitHub</a>
+              {/* <a href="#">Live Demo</a> */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert("Live Demo Coming Soon 🚀");
+                }}
+              >
+                Live Demo
+              </a>
+              <a href="https://tariqazizstacks.github.io/Dice-Game-App/">
+                GitHub
+              </a>
             </div>
-
           </div>
-
         </div>
 
         {/* Project 6 */}
 
         <div className="project-card">
-
           <img src={stdImg} alt="Student ID Generator" />
 
           <div className="project-content">
-
             <h2>Student ID Generator</h2>
 
             <p>
@@ -156,16 +190,23 @@ export default function Projects() {
             <span>HTML • CSS • JavaScript</span>
 
             <div className="project-buttons">
-              <a href="#">Live Demo</a>
-              <a href="https://tariqazizstacks.github.io/Student-Card-App/">GitHub</a>
+              {/* <a href="#">Live Demo</a> */}
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  alert("Live Demo Coming Soon 🚀");
+                }}
+              >
+                Live Demo
+              </a>
+              <a href="https://tariqazizstacks.github.io/Student-Card-App/">
+                GitHub
+              </a>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }
