@@ -79,7 +79,7 @@ export default function Projects() {
 
             <div className="project-buttons">
               <a href="#">Live Demo</a>
-              <a href="#">GitHub</a>
+              <a href="https://tariqazizstacks.github.io/calculator-app/">GitHub</a>
             </div>
 
           </div>
@@ -105,7 +105,7 @@ export default function Projects() {
 
             <div className="project-buttons">
               <a href="#">Live Demo</a>
-              <a href="#">GitHub</a>
+              <a href="https://tariqazizstacks.github.io/RandomColorChanger/">GitHub</a>
             </div>
 
           </div>
@@ -131,7 +131,7 @@ export default function Projects() {
 
             <div className="project-buttons">
               <a href="#">Live Demo</a>
-              <a href="#">GitHub</a>
+              <a href="https://tariqazizstacks.github.io/Dice-Game-App/">GitHub</a>
             </div>
 
           </div>
@@ -157,7 +157,7 @@ export default function Projects() {
 
             <div className="project-buttons">
               <a href="#">Live Demo</a>
-              <a href="#">GitHub</a>
+              <a href="https://tariqazizstacks.github.io/Student-Card-App/">GitHub</a>
             </div>
 
           </div>
